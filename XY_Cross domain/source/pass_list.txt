@@ -1,2 +1,2 @@
-xhzz@123
-redhat
+password1
+password2

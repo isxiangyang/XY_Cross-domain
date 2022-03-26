@@ -5,16 +5,17 @@ python main.py
 
 # 主要功能
 配合使用工具(如Mimikatz)扫描本地密码，并将密码写入source/pass_list.txt
+以下工具(1)简称(1)
 
-工具(1)检测域。 检测到域后，工具(2)自动使用 “net user /domain”等语法检测判断域用户
+(1)检测域。 检测到域后，工具(2)自动使用 “net user /domain”等语法检测判断域用户
 
-工具(3)探索其他存活域主机：自动将网段IP信息写入source/ip_list.txt)
+(3)探索其他存活域主机：自动将网段IP信息写入source/ip_list.txt)
 
 语法：for /L %I in (1,1,254) DO @ping -w 1 -n 1 192.168.3.%I |findstr "TTL="
 
-工具(4)将本机wifi密码并输出至屏幕
+(4)将本机wifi密码并输出至屏幕
 
-工具(5)进行尝试进行Net use 爆破连接
+(5)进行尝试进行Net use 爆破连接
 
 #Net Use is used to connect to the target host
 
@@ -22,6 +23,6 @@ python main.py
 
 #SUCH AS:net use \\127.0.0.1\ipc$ admin@123 /user:administrator
 
-工具(6)集成psexec.exe尝试使用已知密码信息进行交叉式爆破获取shell
+(6)集成psexec.exe尝试使用已知密码信息进行交叉式爆破获取shell
 
-工具(7)进行多线程扫描端口
+(7)进行多线程扫描端口

@@ -1,9 +1,9 @@
-#How to use?
-Please run the main.py file  
-
-1. Scan local passwords with a tool such as Mimikatz and write the passwords to source/pass_list.txt  
-2. Use tool 1 to detect the domain. After the domain is detected, you can use net user /domain to detect the domain user  
-3. Use tool 3(automatically write network segment IP information to source/ip_list.txt)  
-4. Connect the lateral burst connection using tool 4 
+# How to use?
+Run the main.py file  
+# 主要功能
+1. 配合使用工具(如Mimikatz)扫描本地密码，并将密码写入source/pass_list.txt  
+2. 使用工具(1)检测域。 检测到域后，自动使用 “net user /domain”等语法检测判断域用户  
+3. 使用工具(3)自动将网段IP信息写入source/ip_list.txt) 
+4. 工具(4)集成了连接横向突发连接  
 5. Use tool 6 to get target DOS
 6. Use tool 7 to search port that you want
